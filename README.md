@@ -25,6 +25,7 @@ contact.php
 2. Update `contact.php` recipient email (`$to`).
 3. (Optional) Add your Google Analytics and AdSense snippets in `includes/header.php` and `includes/footer.php`.
 4. Ensure `.php` is allowed and `mail()` works on your host. If not, integrate SMTP (e.g., PHPMailer) later.
+5. Note: Use in terminal php -S 0.0.0.0:8080 -t .
 
 ## Local test (PHP 8)
 ```bash
