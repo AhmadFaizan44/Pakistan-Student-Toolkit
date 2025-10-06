@@ -2,8 +2,8 @@
 <h1>Percentage → CGPA (Approximation)</h1>
 <form id="pct-form" method="post" class="calc">
   <div class="row">
-    <div><label>Your Percentage (%)</label><input id="pct" name="pct" type="number" class="input" value="75"/></div>
-    <div><label>Top % ≈ 4.0 CGPA</label><input id="pct-top" name="top" type="number" class="input" value="85"/></div>
+    <div><label>Your Percentage (%)</label><input id="pct" name="pct" type="number" min="0" max="100" class="input" value="75"/></div>
+    <div><label>Top % ≈ 4.0 CGPA</label><input id="pct-top" name="top" type="number" min="1" max="100" class="input" value="85"/></div>
   </div>
   <p class="muted">Note: Universities map percentage to CGPA differently. Adjust the top % slider as per your institute.</p>
   <button class="btn-primary" type="submit">Estimate</button>
