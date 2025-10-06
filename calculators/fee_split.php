@@ -3,7 +3,8 @@
 <form id="fee-form" method="post" class="calc">
   <div class="row">
     <div><label>Total Fee / Principal (PKR)</label><input id="fee-principal" name="principal" type="number" class="input" value="120000"/></div>
-    <div><label>Months</label><input id="fee-months" name="months" type="number" class="input" value="12"/></div>
+    <div><label>Months</label><input id="fee-months" name="months" type="number" min="1" class="input" value="12"/>
+
   </div>
   <div><label>Monthly Mark-up Rate (%)</label><input id="fee-rate" name="rate" type="number" step="0.01" class="input" value="0"/></div>
   <button class="btn-primary" type="submit">Calculate</button>
