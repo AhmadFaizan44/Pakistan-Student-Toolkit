@@ -1,0 +1,123 @@
+/* Pakistan Student Toolkit - Green Theme */
+
+:root {
+  --primary: #2e7d32;   /* deep green */
+  --secondary: #4caf50; /* medium green */
+  --light: #e8f5e9;     /* very light green background */
+  --text-dark: #1b1b1b;
+  --text-light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: var(--text-light);
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button, .btn {
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: var(--secondary);
+}
+
+/* Form Elements */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--secondary);
+  outline: none;
+  box-shadow: 0 0 3px var(--secondary);
+}
+
+/* Calculator Cards */
+.calculator {
+  background: var(--light);
+  border-left: 5px solid var(--secondary);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: var(--primary);
+  color: var(--text-light);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container {
+    margin: 15px;
+    padding: 20px;
+  }
+}
