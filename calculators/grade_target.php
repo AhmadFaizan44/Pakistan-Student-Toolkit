@@ -3,10 +3,12 @@
 <form id="target-form" method="post" class="calc">
   <div class="row">
     <div><label>Desired Course Percentage</label><input id="target-desired" name="desired" type="number" class="input" value="85"/></div>
-    <div><label>Midterm Weight (%)</label><input id="target-mid-weight" name="mid_w" type="number" class="input" value="30"/></div>
+    <div><label>Midterm Weight (%)</label><input id="target-mid-weight" name="mid_w" type="number" min="0" max="100" class="input" value="30"/>
+</div>
   </div>
   <div class="row">
-    <div><label>Final Exam Weight (%)</label><input id="target-final-weight" name="final_w" type="number" class="input" value="40"/></div>
+    <div><label>Final Exam Weight (%)</label><input id="target-final-weight" name="final_w" type="number" min="0" max="100" class="input" value="40"/>
+</div>
     <div><label>Midterm Score (%)</label><input id="target-mid" name="mid" type="number" class="input" value="70"/></div>
   </div>
   <div><label>Assignments/Quizzes Score (%)</label><input id="target-assign" name="assign" type="number" class="input" value="90"/></div>
